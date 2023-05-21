@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My First Page</title>
+    <script src="https://kit.fontawesome.com/0376e78535.js" crossorigin="anonymous"></script>
+
+    <!-- External style -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- 3rd Libraries-->
+    <link rel="stylesheet" href="prism.css" />
+    <script src="./prism.js" async></script>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>Some Special Tags in HTMl</h1>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <section>
+        <!-- P -->
+        <details class="element">
+          <summary class="element__head">
+            <h2><abbr title="Paragraph">p</abbr></h2>
+          </summary>
+
+          <ul class="element__features">
+            <li><p>Block-level elements</p></li>
+            <li><p>Represents a paragraph</p></li>
+          </ul>
+
+          <div class="element__code code">
+            <div class="code__boilerplate">
+              <pre>
+                <code class="language-html">
+                  &lt;p&gt;This is some text in a paragraph&lt;/p&gt;</code>
+              </pre>
+            </div>
+
+            <div class="code__rendering">
+              <p>Represents a paragraph</p>
+            </div>
+          </div>
+        </details>
+
+        <!-- H1 - H6 -->
+        <details class="element">
+          <summary class="element__head">
+            <h2><abbr title="Heading">h1 - h6</abbr></h2>
+          </summary>
+          <ul class="element__features">
+            <li><p>Index the structure and content of your web pages</p></li>
+            <li><p>Avoid using multiple heading</p></li>
+          </ul>
+          <ul class="element__features"></ul>
+          <div class="element__code code">
+            <div class="code__boilerplate">
+              <pre>
+                <code class="language-html">
+                  &lt;h1&gt;This is a heading&lt;/h1&gt;
+                  &lt;h2&gt;This is a heading&lt;/h2&gt;
+                  &lt;h3&gt;This is a heading&lt;/h3&gt;
+                  &lt;h4&gt;This is a heading&lt;/h4&gt;
+                  &lt;h5&gt;This is a heading&lt;/h5&gt;
+                  &lt;h6&gt;This is a heading&lt;/h6&gt;    
+                </code>                       
+              </pre>
+            </div>
+
+            <div class="code__rendering">
+              <h1>Heading 1</h1>
+              <h2>Heading 2</h2>
+              <h3>Heading 3</h3>
+              <h4>Heading 4</h4>
+              <h5>Heading 5</h5>
+              <h6>Heading 6</h6>
+            </div>
+          </div>
+        </details>
+
+        <!-- Figure, Figcaption, Image-->
+        <details class="element">
+          <summary class="element__head">
+            <h2><abbr title="Figure, Figcaption, Image">figure, figcaption, img</abbr></h2>
+          </summary>
+          <ul class="element__features">
+            <li><p>alt: alternative text incase the image is unloaded</p></li>
+            <li><p>Wrapping img with figure tag to enhance the SEO and semantic meaning</p></li>
+          </ul>
+          <div class="element__code code">
+            <div class="code__boilerplate">
+              <pre>
+                <code class="language-html">
+                  &lt;figure&gt;
+                    &lt;img src="image1.png" width="40%" alt="My house" /&gt;
+                    &lt;figcaption&gt;Relative image size&lt;/figcaption&gt;
+                  &lt;/figure&gt;
+                </code>
+              </pre>
+            </div>
+
+            <div class="code__rendering">
+              <figure>
+                <img src="image1.png" width="40%" alt="My house" />
+                <figcaption>Relative image size</figcaption>
+              </figure>
+            </div>
+          </div>
+        </details>
+
+        <!-- Favicon using Fontawesome -->
+        <details class="element">
+          <summary class="element__head">
+            <h2><abbr title="Favicon">i</abbr></h2>
+          </summary>
+
+          <ul class="element__features">
+            <li><p>Using Fontawesome</p></li>
+            <li><p>i tag is not semantic according to the MDN</p></li>
+          </ul>
+
+          <div class="element__code code">
+            <div class="code__boilerplate">
+              <pre>
+                <code class="language-html">
+                  &lt;i class="fa-solid fa-thumbs-up fa-5x"&gt;&lt;/i&gt;
+                </code>
+              </pre>
+            </div>
+
+            <div class="code__rendering">
+              <i class="fa-solid fa-thumbs-up fa-5x"></i>
+            </div>
+          </div>
+        </details>
+      </section>
+
+      <!-- Video -->
+      <details class="element">
+        <summary class="element__head">
+          <h2><abbr title="Video and Source (mp4, webm, ogv, 3gp)">video, source</abbr></h2>
+        </summary>
+
+        <h3>Video rendering supplied by those format standard:</h3>
+        <ul class="element__features">
+          <li>
+            <h4>3GP:</h4>
+            <ul>
+              <li><p>Video format on memory limited storage capacity mobile phone (3G phone)</p></li>
+            </ul>
+          </li>
+          <li>
+            <h4>MP4:</h4>
+            <ul>
+              <li><p>Video format on wide range of devices, including computer, smartphones, and tablets</p></li>
+            </ul>
+          </li>
+          <li>
+            <h4>WebM:</h4>
+            <ul>
+              <li><p>open-source video file format developed by Google</p></li>
+              <li><p>high-quality video compression while keeping file sizes relatively small.</p></li>
+            </ul>
+          </li>
+          <li>
+            <h4>OSG:</h4>
+            <ul>
+              <li><p>open-source video file format developed by Google</p></li>
+              <li><p>Like WebM, OGV is optimized for online video playback.</p></li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="element__code code">
+          <div class="code__boilerplate">
+            <pre>
+              <code class="language-html">
+                &lt;video width=&quot;320&quot; height=&quot;240&quot; controls loop poster=&quot;./image1.png&quot; muted&gt;
+                  &lt;!-- &lt;source src=&quot;http://techslides.com/demos/sample-videos/small.webm&quot; /&gt; --&gt;
+                  &lt;!-- &lt;source src=&quot;http://techslides.com/demos/sample-videos/small.ogv&quot; type=&quot;video/ogg &quot; /&gt; --&gt;
+                  &lt;source src=&quot;http://techslides.com/demos/sample-videos/small.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+                  &lt;!-- &lt;source src=&quot;http://techslides.com/demos/sample-videos/small.3gp&quot; type=&quot;video/3gp&quot; /&gt; --&gt;
+                &lt;/video&gt;
+                
+              </code>
+            </pre>
+          </div>
+
+          <div class="code__rendering">
+            <video width="320" height="240" controls loop poster="./image1.png" muted>
+              <!-- <source src="http://techslides.com/demos/sample-videos/small.webm" /> -->
+              <!-- <source src="http://techslides.com/demos/sample-videos/small.ogv" type="video/ogg " /> -->
+              <source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4" />
+              <!-- <source src="http://techslides.com/demos/sample-videos/small.3gp" type="video/3gp" /> -->
+            </video>
+          </div>
+        </div>
+      </details>
+
+      <!-- Audio -->
+      <audio controls>
+        <source src="https://ia803001.us.archive.org/4/items/Jeffbob/jeffbob.mp3" />
+      </audio>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>THIS IS MY FOOTER</p>
+    </footer>
+  </body>
+</html>
